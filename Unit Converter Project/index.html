@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Unit Converter</h2>
+
+        <label for="conversionType">Select Conversion Type:</label>
+        <select id="conversionType">
+            <option value="length">Length (Meters ⇆ Feet)</option>
+            <option value="weight">Weight (Kg ⇆ Pounds)</option>
+            <option value="temperature">Temperature (Celsius ⇆ Fahrenheit)</option>
+        </select>
+
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" id="inputValue" placeholder="Enter value">
+                <span id="unitLabel1">Meters</span>
+            </div>
+
+            <div class="equals">⇄</div>
+
+            <div class="input-group">
+                <input type="text" id="outputValue" readonly>
+                <span id="unitLabel2">Feet</span>
+            </div>
+        </div>
+
+        <button id="convertBtn">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
